@@ -9,7 +9,6 @@ const btnP2 = document.getElementById('btnP2');
 const btnReset = document.getElementById('btnReset');
 const targetScoreInput = document.getElementById('targetScore');
 
-// bouton 1
 btnP1.addEventListener('click', () => {
   if (!targetScore || scoreP1 < targetScore) {
     scoreP1++;
@@ -18,7 +17,6 @@ btnP1.addEventListener('click', () => {
   }
 });
 
-// bouton 2
 btnP2.addEventListener('click', () => {
   if (!targetScore || scoreP2 < targetScore) {
     scoreP2++;
@@ -33,9 +31,8 @@ targetScoreInput.addEventListener('change', () => {
   const value = parseInt(targetScoreInput.value, 10);
   if (value > 0) {
     targetScore = value;
-
   } else {
-    alert('Please enter a valid target score greater than 0.');
+    alert('Veuillez entrer un score cible valide supérieur à 0.');
     targetScoreInput.value = '';
     targetScore = null;
   }
@@ -54,10 +51,10 @@ function updateScores() {
 
 function checkWinner() {
   if (targetScore && scoreP1 >= targetScore) {
-    alert('Player 1 wins!');
+    alert('Joueur 1 gagne !');
     resetScores();
   } else if (targetScore && scoreP2 >= targetScore) {
-    alert('Player 2 wins!');
+    alert('Joueur 2 gagne !');
     resetScores();
   }
 }
