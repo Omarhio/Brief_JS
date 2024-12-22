@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Score Keeper Application">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="navbar-container">
+                <!-- Liens de navigation -->
+                <ul class="navbar-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="list.html">Liste</a></li>
+                    <li><a href="caroussel.html">Carroussel</a></li>
+                    <li><a href="score.html">Score Keeper</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Input for Target Score -->
+        <section>
+            <label for="targetScore">Set Target Score:</label>
+            <input type="number" id="targetScore" placeholder="Enter target score" min="1">
+        </section>
+
+        <!-- Player 1 Section -->
+        <section>
+            <h2>Player 1</h2>
+            <div class="score" id="scoreP1">0</div>
+            <button type="button" class="btn" id="btnP1">+1 Player 1</button>
+        </section>
+
+        <!-- Player 2 Section -->
+        <section>
+            <h2>Player 2</h2>
+            <div class="score" id="scoreP2">0</div>
+            <button type="button" class="btn" id="btnP2">+1 Player 2</button>
+        </section>
+
+        <!-- Reset Button -->
+        <section>
+            <button type="button" class="btn reset" id="btnReset">Reset Scores</button>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/score.js" defer></script>
+</body>
+
+</html>
