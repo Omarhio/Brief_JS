@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="sass/main.css">
 </head>
 
-<body>
+<body class="index">
     <header>
-        <nav class="navbar" aria-label="Navigation principale">
+        <nav class="navbar index-navbar" aria-label="Navigation principale">
             <div class="navbar-container">
                 <!-- Liens de navigation -->
                 <ul class="navbar-menu">
@@ -24,18 +24,35 @@
         </nav>
     </header>
 
-    <main>
-        <nav aria-label="Navigation principale">
-            <h1>Bienvenue sur le Projet</h1>
-            <p>Utilisez les liens ci-dessous pour accéder aux différentes sections.</p>
-            <ul class="nav-list">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="list.html">Liste</a></li>
-                <li><a href="caroussel.html">Carrousel</a></li>
-                <li><a href="score.html">Gestion des Scores</a></li>
-            </ul>
-        </nav>
-    </main>
+    <main class="index-main">
+        <section class="welcome-section">
+            <h1>Brief JS</h1>
+            <p>Bienvenue ! Choisissez une section ci-dessous pour explorer :</p>
+        </section>
+    
+        <section class="cards-container">
+            <div class="card">
+                <a href="list.html">
+                    <h2>📋 Liste</h2>
+                    <p>Gérez vos listes.</p>
+                </a>
+            </div>
+    
+            <div class="card">
+                <a href="caroussel.html">
+                    <h2>🎠 Carrousel</h2>
+                    <p>Explorez un carrousel interactif d'images.</p>
+                </a>
+            </div>
+    
+            <div class="card">
+                <a href="score.html">
+                    <h2>🏆 Gestion des Scores</h2>
+                    <p>Suivez et gérez les scores des joueurs.</p>
+                </a>
+            </div>
+        </section>
+    </main>    
 
     <footer></footer>
 </body>
