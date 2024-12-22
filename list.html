@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Application pour ajouter, modifier et supprimer dynamiquement des listes avec des éléments.">
     <title>Gestion dynamique des listes</title>
     <link rel="stylesheet" href="sass/main.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navigation principale">
             <div class="navbar-container">
-      
                 <!-- Liens de navigation -->
                 <ul class="navbar-menu">
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="list.html">Liste</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="caroussel.html">Carroussel</a></li>
+                    <li><a href="score.html">Score Keeper</a></li>
                 </ul>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Ajouter, Modifier et Supprimer des Listes avec Éléments</h1>
+    <main>
+        <h1>Ajouter, Modifier et Supprimer des Listes avec Éléments</h1>
 
-    <!-- Formulaire pour ajouter des listes -->
-    <label for="listName">Nom de la liste :</label>
-    <input type="text" id="listName" placeholder="Entrez un nom pour la liste" />
-    <label for="itemCount">Nombre d'éléments :</label>
-    <input type="number" id="itemCount" placeholder="Nombre d'éléments" min="1" />
-    <button id="addListButton">Ajouter la Liste</button>
+        <!-- Formulaire pour ajouter des listes -->
+        <section aria-labelledby="formSection">
+            <h2 id="formSection">Créer une nouvelle liste</h2>
+            <form id="listForm">
+                <div>
+                    <label for="listName">Nom de la liste :</label>
+                    <input type="text" id="listName" name="listName" placeholder="Entrez un nom pour la liste"
+                        required />
+                </div>
+                <div>
+                    <label for="itemCount">Nombre d'éléments :</label>
+                    <input type="number" id="itemCount" name="itemCount" placeholder="Nombre d'éléments" min="1"
+                        required />
+                </div>
+                <button type="button" id="addListButton">Ajouter la Liste</button>
+            </form>
+        </section>
 
-    <!-- Conteneur pour afficher les listes -->
-    <div id="listContainer" class="list-container"></div>
+        <!-- Conteneur pour afficher les listes -->
+        <section aria-labelledby="listSection">
+            <h2 id="listSection">Listes</h2>
+            <div id="listContainer" class="list-container"></div>
+        </section>
+    </main>
 
-    <script src="js/list.js"></script>
+    <footer></footer>
+
+    <script src="js/list.js" defer></script>
 </body>
+
 </html>
