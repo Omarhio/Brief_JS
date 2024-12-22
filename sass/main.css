@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+.container-carousel {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 1200px;
+}
+.container-carousel .carousel {
+  position: relative;
+}
+.container-carousel .carousel .carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.container-carousel .carousel .carousel-container .carousel-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.container-carousel .carousel .carousel-container .carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container-carousel .carousel .carousel-container .carousel-slide.active {
+  opacity: 1;
+}
+.container-carousel .carousel .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00b4d8;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+.container-carousel .carousel .carousel-button:hover {
+  background-color: rgb(0, 137.5, 165);
+}
+.container-carousel .carousel .carousel-button.prev {
+  left: 10px;
+}
+.container-carousel .carousel .carousel-button.next {
+  right: 10px;
+}
+
+header {
+  background-color: #00b4d8;
+  color: #fff;
+  padding: 1rem 0;
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+header .navbar .navbar-container {
+  width: 100%;
+}
+header .navbar .navbar-container .navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header .navbar .navbar-container .navbar-menu li {
+  margin: 0 1rem;
+}
+header .navbar .navbar-container .navbar-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header .navbar .navbar-container .navbar-menu li a:hover {
+  color: rgb(0, 116.25, 139.5);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #00b4d8;
+  color: white;
+  transition: 0.2s ease-out;
+  font-weight: 500;
+}
+button.edit-button {
+  background-color: #00b4d8;
+}
+button.edit-button:hover {
+  background-color: #cc0000;
+  border-radius: 8px;
+  transform: scale(1.04);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.479);
+}
+button.delete-button {
+  background-color: #6c757d;
+}
+button.delete-button:hover {
+  background-color: #cc0000;
+}
+
+input[type=text] {
+  padding: 8px 10px;
+  border: 1px solid rgb(154.7162162162, 164.5, 174.2837837838);
+  border-radius: 4px;
+  font-size: 16px;
+}
+input[type=text]:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.list-container {
+  margin-top: 20px;
+}
+.list-container .list-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.list-container .list-item h3 {
+  margin: 0 0 10px;
+  color: #212529;
+}
+.list-container .list-item ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.list-container .list-item ul li {
+  margin-bottom: 5px;
+  color: rgb(55.7432432432, 62.5, 69.2567567568);
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.315);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 800px;
+  height: 500px;
+}
+
+img {
+  width: 600px;
+  height: 500px;
+  background: cover/center;
+}
+
+.carousel-slide:not(.active) {
+  display: none;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

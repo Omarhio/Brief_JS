@@ -1,37 +1,27 @@
-// Abstracts
+// abstracts
 @import 'abstracts/variables';
-@import 'abstracts/functions';
 @import 'abstracts/mixins';
-@import 'abstracts/placeholders';
 
-// Base styles
+// base
 @import 'base/reset';
 @import 'base/typography';
-@import 'base/base';
 
-// Layouts
-@import 'layouts/header';
-@import 'layouts/footer';
-@import 'layouts/sidebar';
-@import 'layouts/grid';
-@import 'layouts/containers';
+// layout
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
 
-// Components
+// components
 @import 'components/buttons';
-@import 'components/cards';
-@import 'components/navbar';
+@import 'components/inputs';
 @import 'components/list';
 
-// Pages
+// pages
 @import 'pages/home';
-@import 'pages/about';
 @import 'pages/carroussel';
 
-// Themes
+// themes
 @import 'themes/dark';
-@import 'themes/light';
 
-// Vendors
+// vendors
 @import 'vendors/bootstrap';
-@import 'vendors/normalize';
-
