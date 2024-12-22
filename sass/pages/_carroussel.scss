@@ -15,6 +15,10 @@
         align-items: center;
         width: 100%;
         height: 80%;
+                // Animation fade-in au chargement
+                opacity: 0;
+                transform: translateY(20px); // Légère élévation
+                animation: fadeInDown 0.8s ease-out forwards;
     }
 
     .carousel {
@@ -85,5 +89,17 @@
             right: 3%;
             top: 90%;
         }
+    }
+}
+
+// Définition de l'animation fade-in
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

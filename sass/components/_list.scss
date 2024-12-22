@@ -14,6 +14,11 @@
         border-radius: 10px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         padding: 3rem;
+
+        // Animation fade-in au chargement
+        opacity: 0;
+        transform: translateY(20px); // Légère élévation
+        animation: fadeInDown 0.8s ease-out forwards;
     }
 
     .welcome-section {

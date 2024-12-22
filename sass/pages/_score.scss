@@ -18,6 +18,11 @@
         max-width: 800px;
         text-align: center;
 
+        // Animation fade-in au chargement
+        opacity: 0;
+        transform: translateY(20px); // Légère élévation
+        animation: fadeInDown 0.8s ease-out forwards;
+
         .score-section {
             margin-bottom: 2rem;
 
@@ -26,6 +31,7 @@
                 color: #333;
                 margin-bottom: 0.5rem;
                 display: block;
+                animation: fadeInDown 1s ease-out forwards;
             }
 
             input[type="number"] {
@@ -35,7 +41,6 @@
                 border-radius: 6px;
                 text-align: center;
                 width: 250px;
-                
             }
         }
 
@@ -72,7 +77,8 @@
     
                 &.reset {
                     background-color: #dc3545;
-    
+                    animation-delay: 1s;
+
                     &:hover {
                         background-color: #b02a37;
                     }
@@ -106,5 +112,17 @@
                 }
             }
         }
+    }
+}
+
+// Définition de l'animation fade-in
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
