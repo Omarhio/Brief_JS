@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="sass/main.css">
 </head>
 
-<body>
-    <header>
+<body class="list-page">
+    <header class="list-header">
         <nav class="navbar" aria-label="Navigation principale">
             <div class="navbar-container">
-                <!-- Liens de navigation -->
                 <ul class="navbar-menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="list.html">Liste</a></li>
@@ -25,37 +24,36 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Ajouter, Modifier et Supprimer des Listes et Éléments</h1>
+    <main class="list-main">
+        <section class="welcome-section">
+            <h1>📋 Gestion des Listes</h1>
+            <p>Créez, modifiez et gérez vos listes facilement.</p>
+        </section>
 
-        <!-- Formulaire pour ajouter des listes -->
-        <section aria-labelledby="formSection">
-            <h2 id="formSection">Créer une Nouvelle Liste</h2>
+        <section class="form-section">
+            <h2>🛒 Créer une Nouvelle Liste</h2>
             <form id="listForm">
-                <div>
+                <div class="form-group">
                     <label for="listName">Nom de la liste :</label>
-                    <input type="text" id="listName" name="listName" placeholder="Entrez le nom de la liste"
-                        required />
+                    <input type="text" id="listName" placeholder="Entrez le nom de la liste" required />
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="itemCount">Nombre d'éléments :</label>
-                    <input type="number" id="itemCount" name="itemCount" placeholder="Nombre d'éléments" min="1"
-                        required />
+                    <input type="number" id="itemCount" placeholder="Nombre d'éléments" min="1" required />
                 </div>
-                <button type="button" id="addListButton">Ajouter la Liste</button>
+                <button type="button" id="addListButton" class="btn-primary">Ajouter la Liste</button>
             </form>
         </section>
 
-        <!-- Conteneur pour afficher les listes -->
-        <section aria-labelledby="listSection">
-            <h2 id="listSection">Listes Disponibles</h2>
+        <section class="list-display">
+            <h2>📄 Listes Disponibles</h2>
             <div id="listContainer" class="list-container"></div>
         </section>
     </main>
-
-    <footer></footer>
-
-    <script src="js/list.js" defer></script>
 </body>
+
+<script src="js/list.js" defer></script>
+
+<footer></footer>
 
 </html>
