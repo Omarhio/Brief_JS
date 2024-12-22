@@ -1,0 +1,103 @@
+.index-main {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Arial', sans-serif;
+
+    .welcome-section {
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 3rem;
+            color: #0077b6;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            animation: fadeInUp 1s ease-out;
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s;
+            width: 280px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(30px) rotate(-2deg);  // Légère rotation initiale
+
+            &:hover {
+                transform: translateY(-10px) rotate(2deg);  // Rotation inverse au hover
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                opacity: 1;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0077b6;
+                display: block;
+
+                h2 {
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
+// Animation de fondu (entrée des éléments)
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Apparition des cartes avec un léger délai pour chaque carte
+.card:nth-child(1) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(2) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.card:nth-child(3) {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.7s;
+}
