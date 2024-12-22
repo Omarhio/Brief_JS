@@ -375,4 +375,96 @@ input[type=text]:focus {
   top: 90%;
 }
 
+.score-page {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+.score-page .score-main {
+  background-color: white;
+  padding: 3rem;
+  margin: 10rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+.score-page .score-main .score-section {
+  margin-bottom: 2rem;
+}
+.score-page .score-main .score-section label {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.score-page .score-main .score-section input[type=number] {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  width: 250px;
+}
+.score-page .score-main .player {
+  margin: 2rem 0;
+}
+.score-page .score-main .player h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+.score-page .score-main .player .score {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.score-page .score-main .player .btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.score-page .score-main .player .btn:hover {
+  background-color: #005f73;
+}
+.score-page .score-main .player .btn.reset {
+  background-color: #dc3545;
+}
+.score-page .score-main .player .btn.reset:hover {
+  background-color: #b02a37;
+}
+.score-page .score-main .player .btn.disabled {
+  background-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.score-page .score-main .player input[type=number] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+.score-page .score-main .reset-section {
+  margin-top: 2rem;
+}
+.score-page .score-main .reset-section .reset {
+  background-color: #dc3545;
+}
+.score-page .score-main .reset-section .reset:hover {
+  background-color: #b02a37;
+}
+
 /*# sourceMappingURL=main.css.map */
