@@ -1,2 +1,3 @@
-sass/main.css
-sass/main.css.map
+auto.sh
+compile_sass.sh
+.vscode
