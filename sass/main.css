@@ -111,10 +111,12 @@ input[type=text]:focus {
 .list-page .welcome-section h1 {
   font-size: 3rem;
   color: #0077b6;
+  animation: fadeInDown 0.8s ease-out forwards;
 }
 .list-page .welcome-section p {
   font-size: 1.2rem;
   color: #555;
+  animation: fadeInDown 0.8s ease-out forwards;
 }
 .list-page .form-section {
   margin: 3rem 0;
